@@ -1,0 +1,90 @@
+How to import AFW from git to our system
+u should know URI and login credentials - un & token ( devops)
+1.open the eclipse
+2.FIle->import->git>projects from git
+3.Next->clone URI->next
+4. specify URI, un & token click next
+5.next->next->next->finish
+
+Note: if there is error in project
+      Right click on the project->Maven->Update Project
+      select Force update clickok
+
+How to convert MTC into ATS?
+1. we should have MTC
+2. it will be provided by Manual Team
+3. are u going to automate all TC? no only regression TC
+4. who do u know which on is regression ? informed by MTT
+5. do u automate -ve test cases? - yes , every thing as long as it is part regression suite
+6. any tc which has manual intervention we dont automate- captch OTP printing scanning 
+   audio video... Graphs Charts Reports
+7. WHich one u automate 1st? - smoke test case - sanity -dry run 
+   BVT- Build Verification Testing
+
+
+TestCase - Valid Login
+Precondition: Login Page
+Steps
+1. Enter valid username
+2. Enter valid password
+3. click on login button
+4. verify that home page is displayed
+
+TestCase - Invalid Login
+Precondition: Login Page
+Steps
+1. Enter invalid username
+2. Enter invalid password
+3. click on login button
+4. verify that err msg is displayed
+
+
+
+1. Execute the test case manually once- understand the test case
+2. while executing the TC -note down 3 things
+     a. page
+     b. element
+     c. action
+  
+page		element		action
+Login		un				enter
+Login 	pw				enter
+Login		loginBTN	click
+ETTPage logout 		displayed
+
+3. for each page create respective pom class under page package
+		a. Name of the pom class should be same as page name -end with Page
+     b. Every pom class should have parameterized constructor
+     c. Declare the element using @FindBy, initilaize using PageFactory and utilize it using
+          method
+
+
+4. Test Class
+		
+
+		1. create a Test class under script package
+     2. Name of the class should be same as Feature or Test Case Name
+     3. Every Test Class should extend BaseTest class
+     4. Every Test Class should contains Test Method (@Test) 
+        method name should start with 'test' 
+     5. specify the priority
+     6. specify test case step as inline comment
+     7. below each comment call respective method of pom class and report the step
+     8. at the last step use assert
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

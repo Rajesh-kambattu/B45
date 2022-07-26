@@ -1,0 +1,45 @@
+created folder structure
+create files
+added dependencies
+develop generic lib
+set rules
+ 1. Automation script should be dev under 'script' package
+ 2. POM class should be under page package
+ 3. test data should be repsent inside input.xlsx
+ 4. Every test class should extend BaseTest class
+  
+
+Above steps are done based on my past exp and project- AFW design
+
+We store and manage all out automation code in github - which is online repository
+1. Login to github.com
+3. click create repository
+4. specify the name as B45
+5. click create repository
+6. copy and paste the git url -https://github.com/AksharaBhanu/B45.git ( URI)
+7.click profile pic (right top corner)->settings
+8. click Developer Settings
+9. click Personal access tokens
+10. CLick Generate new token
+11. Specify the note
+12. select all the check box
+13. Click Generate Token
+14 copy paste the token
+ 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
+
+Uploading AFW from eclipse to github
+1. Right click on the project ->team->share
+2. select the checkbox
+3. select the project
+4.click create repository click finish
+5. Rigth click on the project ->team ->commit
+6.click add all
+7. write the comment
+8. click commit and push
+9. specify URI
+10. specify git un 
+11. specify git token as password
+12. click preview twice and click push
+
+    
+
