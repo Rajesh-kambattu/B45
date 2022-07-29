@@ -1,0 +1,17 @@
+username
+rajesh.kambath@gmail.com
+pwd
+Githubpwd@123
+
+https://github.com/Rajesh-kambattu/B45.git (Uniform Resource Identifier)
+
+Personal access tokens
+(password)
+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
+
+
+
+
+
+
+
